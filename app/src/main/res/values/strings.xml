@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Flashtorch</string>
+    <string name="backflash">Backflash</string>
+    <string name="frontflash">Frontflash</string>
+</resources>
