@@ -46,9 +46,10 @@ public class MainActivity extends AppCompatActivity {
         // Set up listeners
         backFlashlightButton.setOnCheckedChangeListener((buttonView, isChecked) -> {
             if (isChecked) {
-                turnOnBackFlash();
                 frontFlashlightButton.setChecked(false);
                 bothFlashlightButton.setChecked(false);
+                turnOnBackFlash();
+
             } else {
                 turnOffFlash(backCameraId);
             }
@@ -56,9 +57,10 @@ public class MainActivity extends AppCompatActivity {
 
         frontFlashlightButton.setOnCheckedChangeListener((buttonView, isChecked) -> {
             if (isChecked) {
-                turnOnFrontFlash();
                 backFlashlightButton.setChecked(false);
                 bothFlashlightButton.setChecked(false);
+                turnOnFrontFlash();
+
             } else {
                 turnOffFlash(frontCameraId);
             }
@@ -66,10 +68,11 @@ public class MainActivity extends AppCompatActivity {
 
         bothFlashlightButton.setOnCheckedChangeListener((buttonView, isChecked) -> {
             if (isChecked) {
-                turnOnBackFlash();
-                turnOnFrontFlash();
                 backFlashlightButton.setChecked(false);
                 frontFlashlightButton.setChecked(false);
+                turnOnBackFlash();
+                turnOnFrontFlash();
+
             } else {
                 turnOffFlash(backCameraId);
                 turnOffFlash(frontCameraId);
